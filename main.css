@@ -1,0 +1,21 @@
+
+
+
+
+
+/** Mobile **/
+@media only screen and (max-width: 767px)
+{
+}
+/** Tablet **/
+@media only screen and (min-width: 768px) and (max-width: 1125px)
+{
+}
+/** Desktop **/
+@media only screen and (min-width: 1126px) {
+{
+}
+/** Maximum Container Width (1310px) **/
+@media only screen and (min-width: 1311px) {
+{
+}
