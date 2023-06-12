@@ -49,6 +49,14 @@ function create_post_type() {
 add_action( 'init', 'create_post_type' );
 
 /*****************************************
+ * Useful functions for CPTs
+******************************************/
+get_permalink() // Link to page
+get_the_title() // Title to page
+get_the_post_thumbnail() // Img URL
+get_post_thumbnail_id() // Get post ID for attachment on image
+
+/*****************************************
  * Using WP_Query with CPTs
 ******************************************/
 /**
