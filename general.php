@@ -146,6 +146,7 @@ function yearshortcode( $atts ) {
 	return date('Y');
 }
 add_shortcode( 'year', 'yearshortcode' );
+// Copyright © [year] - WebsiteName [nolink] 
 
 /*****************************************
 * FontAwesome Icons
