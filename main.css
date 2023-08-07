@@ -4,6 +4,10 @@
  * Use Freely
 **/
 
+/** Remove Search Icon in ENFOLD **/
+#menu-item-search {
+	display: none !important;
+}
 
 /** Custom Class : center cols **/
 .centercols .entry-content-wrapper
