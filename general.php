@@ -6,6 +6,21 @@
  * Use Freely
 **/
 
+/*****************************************
+* Force browsers to update style.css file
+******************************************/
+function update_enfold_child_style_version( $src, $handle ) {
+  if ( 'avia-style' === $handle ) {
+    $filepath = get_stylesheet_directory() . '/style.css';
+    $version  = file_exists($filepath) ? filemtime($filepath) : false;
+    if ( $version ) {
+      $src = get_stylesheet_directory_uri() . '/style.css?ver=' . $version;
+    }
+  }
+  return $src;
+}
+add_filter( 'style_loader_src', 'update_enfold_child_style_version', 10, 2 );
+
 
 /*****************************************
 * Add ACF Options Page
